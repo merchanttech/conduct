@@ -54,6 +54,6 @@ Thank you, [contributors](https://github.com/merchanttech/mtm-conduct/graphs/con
 License
 -------
 
-Guides is © 2017 The MTM Agency.
+Conduct is © 2017 The MTM Agency.
 
 The names and logos for The MTM Agency are trademarks of The MTM Agency, LTD.
