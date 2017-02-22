@@ -1,0 +1,39 @@
+@import "partial-name";
+
+$map: (
+  key-1: value-1,
+  key-2: value-2,
+);
+
+.class-one {
+  border: 0;
+  background-color: $color-variable;
+
+  @media (min-width: $screen-variable) {
+    margin: ($spacing-variable * 2) $spacing-variable;
+  }
+
+  &:hover {
+    box-shadow: 0 0 2px 1px $color-variable;
+  }
+
+  &::before {
+    content: "hello";
+  }
+}
+
+.class-two {
+  @include mixin;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
