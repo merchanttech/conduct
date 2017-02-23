@@ -1,5 +1,6 @@
-QA list for Backend CMS 7.5+ MVC
-Source code and database
+#EPiSERVER Guidelines QA list for Backend CMS 7.5+ MVC
+
+##Source code and database
 * The project is easy to retrieve from source control.
 * The project builds without warnings.
 * The project only contains files that are in use.
@@ -15,7 +16,7 @@ Source code and database
 * User and environment specific files (.user, .suo...) are not included in the source control.
 * The database name is not prefixed with "db".
 
-Config files and other settings
+##Config files and other settings
 * The solution runs in IISExpress and IIS7+ with no hazzle.
 * If a separate, custom IIS setup is required, this is automated through scripts described in the readme file.
 * Configuration is split into logical files, with all necessary transformations for every relevant environment.
@@ -30,7 +31,7 @@ Config files and other settings
 * Licenses are included in the solution for every environment (test, staging, production, development...)
 * web.config/compilation debug="true" is transformed away when deploying with Release.Prod
 
-Editor friendliness
+##Editor friendliness
 * There are no unused page types.
 * There are no unused blocks.
 * Page type properties are sorted in a logical manner.
@@ -55,11 +56,11 @@ Editor friendliness
 * Blocks and page types has images for preview/display (ImageUrlAttribute)
 * Content types that should have but not necessarily have to have content should be validated (IValidate<T>). For example, a calendar event should propbably have a start and end date, but it might be valid with just the start date too.
 
-Administrator friendliness
+##Administrator friendliness
 * There are no unused groups or virtual roles.
 * Access rights for editors can easily be controlled from admin mode, and does not require changes to web.config.
 
-Technical quality
+##Technical quality
 * The solution can display simple EPiServer pages without crashing if integrations are unavailable/removed.
 * The solution is appropriately split into projects.
 * Logging is implemented and set up to log to a database.
@@ -112,7 +113,7 @@ Technical quality
 * Information (code, comments, logic) is not duplicated around the solution. Also goes for "almost exactly the same"-things that could be generalized somehow.
 * If the site is multi lingual, all forms posting to page controllers are posting to the correct language version of the page.
 
-Language settings
+##Language settings
 * Amount of active site languages is restricted.
 * System language is set (usually to norwegian).
 * Language files exist only for active languages.
@@ -120,7 +121,7 @@ Language settings
 * Pages have a canonical tag for fallback language, if any.
 * lang attribute is set on the html element.
 
-Search
+##Search
 * Search results are bookmarkable (=> controlled with query strings, not POST parameters).
 * All searchable content types have a sensible view in the search results.
 * An empty result should tell you about "0 hits", not just return an empty page.
@@ -128,7 +129,7 @@ Search
 * Don't display a million hits. Use paging, "Show more" or similar.
 * If some form of custom sorting/filtering is done, the hit rank is preserved.
 
-Security
+##Security
 * Tools, admin plugins etc. are secured (for example with a location in web.config or by using the AuthorizeAttribute).
 * E-mail addresses aren't given away in clear text on public pages.
 * If user generated content is output inside Javascript strings, this is encoded.
@@ -136,7 +137,7 @@ Security
 * Controller actions (both plain MVC controllers, page controllers and WebAPI-controllers) that are only reachable for certain users are locked down either by AuthorizeAttribute or (if possible) page access rights.
 * File uploads checks file type (for example, .html or .exe files shouldn't be uploadable. Some sort of editor will end up opening it, and if it's full of bogus, things happen...)
 
-Development environment
+##Development environment
 * Google Analytics (or equivalent) is not running in development and test environments.
 * If the database is to be moved into production, there's a separate content structure for test content.
 * Pornalizer and "funny pictures" are not used to add placeholder content. Generic "lorem ipsum" and non-offensive pictures are nice.
@@ -149,7 +150,7 @@ Development environment
 * Robots.txt disallows everything.
 * Cache folder for scaled images is moved out of the application directory.
 
-Production environment
+##Production environment
 * Existing important links are handled when rolling out the new site to preserver page ranking in search engines.
 * Languages are set up per host name in admin mode => config. This to avoid urls like www.epinova.no/en.
 * The site replies to either mysite.com or www.mysite.com - not both. Redirect to the canonical variant is set up.
@@ -164,3 +165,5 @@ Production environment
 * The wiki documentation does not duplicate config file content or other things that are present in the source code.
 * Cache folder for scaled images is moved out of the application directory.
 * In addition to this, we have free text areas for "Miscellaneous" and "Summary" to point out every other thing that we might find during the checking. 
+
+Source: https://www.epinova.no/en/blog/quality-assurance-checklists-for-episerver-projects/
