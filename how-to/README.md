@@ -18,10 +18,16 @@ Most of the following points will happen in the Terminal app.
 8. Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
 9. Download and install [SequelPro](https://sequelpro.com/)
 
-... start a new project?
+... start a new wordpress project ?
 --------------------------
 
-Coming soon...
+1. Create a repo in github
+2. Commit default readme and .gitignore file [example](https://gist.github.com/hasannawaz/1778fa1b9d7a8293d9da363a17c807da)
+3. Clone a Vagrantfile from another project, increment the ip in file.
+4. Create a Public folder and import a vanilla wordpress installation.
+5. Generate and install a base theme using [Underscores](http://underscores.me/)
+6. Install ACF Pro for custom backend fields.
+
 
 ... update Vagrant ScotchBox MySQL Server?
 ------------------------------------------
