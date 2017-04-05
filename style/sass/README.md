@@ -4,6 +4,18 @@
 - [Default Sass-Lint configuration](.sass-lint.yml)
   - This configuration aligns with our team-wide guides below.
 
+## Architecture
+
+Project stylesheets should be structured following closely to the principles of [ITCSS](https://medium.com/@jordankoschei/how-i-shrank-my-css-by-84kb-by-refactoring-with-itcss-2e8dafee123a#.7gdzbrk1m), imported in the following order for greater control over re-usability and specificity:
+
+0. **Settings** - Global configuration and variables.
+0. **Tools** - Mixins and functions.
+0. **Generic** - High-level styles such as resets and [normalize.css](https://github.com/necolas/normalize.css).
+0. **Elements** - Base HTML styling.
+0. **Objects** - Common non-cosmetic structural design patterns.
+0. **Components** - Specific cosmetic elements of UI.
+0. **Utilities** - Helpers and overrides.
+
 ## Formatting
 
 * Use the SCSS syntax.
@@ -50,7 +62,7 @@
 
 * Avoid using the SCSS ampersand shortcut (`&__`) when defining elements, it'll make searching the codebase a lot less productive.
 * Don't create elements inside elements (e.g. `.block__element__element`). Consider creating a new block for the parent element instead.
-* Changes in a state shouldn't be dictated by modifiers.
+* Changes in a state shouldn't be dictated by modifiers, and are handled [slightly differently](#states).
 
 ## Namespacing
 
@@ -58,6 +70,10 @@
 * `c-` signifies that this class is a **Component**. This is a concrete, implementation-specific piece of UI. All of the changes you make to its styles should be detectable in the context you're currently looking at. Modifying on top of these styles should be safe and have no side effects.
 * `u-` signifies that this class is a **Utility** class. It has a very specific role (often providing only one declaration) and probably recognize this namespace from libraries and methodologies like SUIT.
 * `t-` signifies that a class is responsible for adding a **Theme** to a view. It lets us know that UI Components' current cosmetic appearance may be due to the presence of a theme.
+
+## States
+
+* Use `is-` or `has-` to customize a temporary, optional, or short-lived style applied due to a certain state being invoked.
 
 ## Extending and Modifying
 

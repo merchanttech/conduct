@@ -1,6 +1,7 @@
 Git
 ===
 
+* Use hyphenated style when naming branches: `branch-name`, not `branch_name` or `branchName`.
 * Avoid merge conflicts by using a [rebase workflow].
 * Squash multiple trivial commits into a single commit.
 * Write a [good commit message].

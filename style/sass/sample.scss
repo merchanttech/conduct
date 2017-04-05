@@ -13,6 +13,10 @@ $map: (
     margin: ($spacing-variable * 2) $spacing-variable;
   }
 
+  &.is-active {
+    background-color: $other-color-variable;
+  }
+
   &:hover {
     box-shadow: 0 0 2px 1px $color-variable;
   }
