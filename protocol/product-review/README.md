@@ -36,7 +36,11 @@ Bug reporting
 Bad bug reports waste time and money while everyone goes back and forth to clarify the necessary details.
 Perhaps worse, bad bug reports tug at developers' sanity and can put strain on the team dynamic.
 
-When reporting a bug try to:
+**MOST IMPORTANT BEFORE REPORTING A BUG!**
+
+Make sure you have cleared your browser cache prior to testing!
+
+**When reporting a bug try to:**
 
 * **Reproduce** (sometimes random glitches just happen -- maybe an update was being deployed right as you were doing something; maybe your browser crapped out on you, maybe something is wrong with the content).
 * **Break down**:
@@ -97,9 +101,9 @@ Expected result:
 Actual result:
 - Gallery items follow item width when displayed.
 
-Screenshot1: expected-result.jpg
-Screenshot2: actual-result.jpg
-Short screencast: behaviour.gif
+Screenshot1: gallery-expected-result.jpg
+Screenshot2: gallery-actual-result.jpg
+Short screencast: gallery-behaviour.gif
 ```
 
 **Sweat the details, not the format**
