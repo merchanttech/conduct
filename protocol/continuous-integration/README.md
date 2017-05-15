@@ -22,7 +22,7 @@ As stated in the [git](../git) protocol you should always work in feature branch
 
 **General**
 
-* Once you work is done push the feature branch onto the Github repo and create a pull request
+* Once you work is done, push the feature branch to the Github repo and create a pull request.
 * After the pull request has been approved or work has been implemented the branch gets merged into master.
 
 **PHP**
@@ -32,4 +32,5 @@ As stated in the [git](../git) protocol you should always work in feature branch
 
 **.NET**
 
-* Coming soon...
+* For the staging environment (UAT), TeamCity will automatically pick up the code changes and will deploy to UAT server.
+* Once the tests pass on the UAT, deployment to the LIVE environment has to be done manually from TeamCity and Octopus Deploy.
