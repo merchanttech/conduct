@@ -38,9 +38,10 @@ Perhaps worse, bad bug reports tug at developers' sanity and can put strain on t
 
 **MOST IMPORTANT BEFORE REPORTING A BUG!**
 
-Make sure you have cleared your browser cache prior to testing!
+Make sure you have cleared your browser's cache prior to testing!
 
-**When reporting a bug try to:**
+When reporting a bug try to:
+---------------------------
 
 * **Reproduce** (sometimes random glitches just happen -- maybe an update was being deployed right as you were doing something; maybe your browser crapped out on you, maybe something is wrong with the content).
 * **Break down**:
@@ -56,43 +57,56 @@ Make sure you have cleared your browser cache prior to testing!
   * Provide error details (if the bug included an error message, provide as much of the error text as possible).
   * Provide browser and operating system details.
 
+All bugs must be reported through ActiveCollab as a task in which all the involved developers into the actual project are mentioned inside the comment body that describes the bug. Developers will then assign the task themselves based on the actual type of work required in order to fix it.
+
 Anatomy of a bug report
 -----------------------
 
 **Bad:**
 
-`Links on blog post are broken.` or `Page link is not working.`
+```
+Links on blog posts are broken.
+```
+or
+
+```
+Page link is not working.
+```
 
 **Good:**
 
-`Headlines on all posts on the blog index page appear to be linked to homepage rather than actual article page.`
+```markdown
+Headlines on all posts on the blog index page appear to be linked to homepage rather than actual article page.
 
-```
+------------------------------------------------------------
+
 Tested browsers and OS: Chrome 16.0.912.63, Mac OSX
 
 Steps to reproduce:
-- Went to blog index page (http://url-to-actual-page.com).
+- Went to blog index page (http://url-to-actual-page.tld).
 - Clicked first article headline (Title of the article).
 
 Expected result:
-- I am taken to "Title of the article" blog post page (http://url-of-the-referred-to-article-page.com).
+- I am taken to "Title of the article" blog post page (http://url-of-the-referred-to-article-page.tld).
 
 Actual result:
 - I am taken to homepage.
 ```
 
-Also good:
+or
 
-`Gallery layout breaks when viewport size is bellow 680px.`
+```markdown
+Gallery layout breaks when viewport size is bellow 680px.
 
-```
+---------------------------------------------------------
+
 Tested browsers and OS:
   - Chrome 16.0.912.63, Mac OSX
   - iOS Safari, iOS 10.3
   - IE10, Windows 8
 
 Steps to reproduce:
-- Went to gallery page (http://url-to-gallery-page.com)
+- Went to gallery page (http://url-to-gallery-page.tld)
 - Resized browser window from right to left
 
 Expected result:
@@ -108,4 +122,6 @@ Short screencast: gallery-behaviour.gif
 
 **Sweat the details, not the format**
 
-The exact format of your bug reports isn't that much important and can slightly vary from the above templates. The important thing is that you start thinking about experiencing bugs in a different way, and that you respect your team's time enough to try to reproduce a bug and collect sufficient details yourself before sending over the bug report.
+The exact format of your bug reports isn't that much important and can slightly vary from the above templates.
+The important thing is that you start thinking about experiencing bugs in a different way, and that you respect your team's time enough to try to reproduce a bug
+and collect sufficient details yourself before sending over the bug report.
