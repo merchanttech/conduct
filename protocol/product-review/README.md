@@ -80,7 +80,7 @@ Headlines on all posts on the blog index page appear to be linked to homepage ra
 
 ------------------------------------------------------------
 
-Tested browsers and OS: Chrome 16.0.912.63, Mac OSX
+Tested browsers and OS: Chrome 58.0.3029.110, Mac OS
 
 Steps to reproduce:
 - Went to blog index page (http://url-to-actual-page.tld).
@@ -101,7 +101,7 @@ Gallery layout breaks when viewport size is bellow 680px.
 ---------------------------------------------------------
 
 Tested browsers and OS:
-  - Chrome 16.0.912.63, Mac OSX
+  - Chrome 58.0.3029.110, Mac OS
   - iOS Safari, iOS 10.3
   - IE10, Windows 8
 
