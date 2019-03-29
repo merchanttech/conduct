@@ -20,25 +20,25 @@ have them review the changes in person.
 Screencast
 ----------
 
-Use [Kap] to share a screencast gif in the project's [Slack] channel.
+Use [CloudApp] to create a screen recording and share it in the project's Slack channel
+or in the project's VSTS story.
 
-[Kap]: https://getkap.co/
-[Slack]: https://slack.com/
+[CloudApp]: https://www.getcloudapp.com/
 
 Video chat and screen-share
 --------------------------
 
-Start a Skype video call
+Start a Slack video call
 
 Bug reporting
 =============
 
-Bad bug reports waste time and money while everyone goes back and forth to clarify the necessary details.
-Perhaps worse, bad bug reports tug at developers' sanity and can put strain on the team dynamic.
+Bad bug reports **waste time and money** while everyone goes back and forth to clarify the necessary details.
+Perhaps worse, bad bug reports **tug at developers' sanity** and can **put strain on the team dynamic**.
 
 **MOST IMPORTANT BEFORE REPORTING A BUG!**
 
-Make sure you have cleared your browser's cache prior to testing!
+⚠️ Make sure you have cleared your browser's cache prior to testing!
 
 When reporting a bug try to:
 ---------------------------
@@ -57,7 +57,7 @@ When reporting a bug try to:
   * Provide error details (if the bug included an error message, provide as much of the error text as possible).
   * Provide browser and operating system details.
 
-All bugs must be reported through ActiveCollab as a task in which all the involved developers into the actual project are mentioned inside the comment body that describes the bug. Developers will then assign the task themselves based on the actual type of work required in order to fix it.
+All bugs must be reported through VSTS as a bug in which all the involved developers into the actual project are mentioned inside the **Discussion** comment body of the bug page. Developers will then assign the task themselves based on the actual type of work (frontend / backend) required in order to fix it.
 
 Anatomy of a bug report
 -----------------------
@@ -123,5 +123,4 @@ Short screencast: gallery-behaviour.gif
 **Sweat the details, not the format**
 
 The exact format of your bug reports isn't that much important and can slightly vary from the above templates.
-The important thing is that you start thinking about experiencing bugs in a different way, and that you respect your team's time enough to try to reproduce a bug
-and collect sufficient details yourself before sending over the bug report.
+The important thing is that you start thinking about experiencing bugs in a different way, and that **you respect your team's time** enough to try to reproduce a bug and **collect sufficient details yourself before sending over the bug report**.
