@@ -9,7 +9,7 @@ JavaScript
 * Prefer [arrow functions] `=>`, over the `function` keyword except when
   defining classes or methods.
 * Use semicolons at the end of each statement.
-* Prefer single quotes.
+* Prefer double quotes.
 * Use `PascalCase` for classes, `lowerCamelCase` for variables and functions,
   `SCREAMING_SNAKE_CASE` for constants, `_singleLeadingUnderscore` for private
   variables and functions.
@@ -19,8 +19,8 @@ JavaScript
 * Use `const` for declaring variables that will never be re-assigned, and `let`
   otherwise.
 * Avoid `var` to declare variables.
-* Use a [trailing comma] after each item in a multi-line array or object
-  literal, including the last item.
+* Don't use a [trailing comma] after the last item in a multi-line array or object
+  literal.
 
 [template strings]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings
 [arrow functions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
