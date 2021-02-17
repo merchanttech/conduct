@@ -1,12 +1,12 @@
 @import "partial-name";
 
 $map: (
-  key-1: value-1,
-  key-2: value-2,
+  "key-1": value-1,
+  "key-2": value-2,
 );
 
-.class-one {
-  border: 0;
+.c-example {
+  border-width: 0;
   background-color: $color-variable;
 
   @media (min-width: $screen-variable) {
@@ -26,18 +26,25 @@ $map: (
   }
 }
 
-.class-two {
+.c-example-two {
   @include mixin;
   display: flex;
   flex: 1 1 auto;
   align-items: center;
 
-  a {
+  // Nest components only if the styles should be
+  // different in the scope of the parent component.
+  .c-link {
     text-decoration: none;
 
     &:focus,
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  // don't concatenate selectors
+  &__child {
+    color: $red;
   }
 }
